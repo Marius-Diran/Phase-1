@@ -17,7 +17,8 @@ let username;
 
 document.querySelector('#submit-btn').onclick = function (){
   username = document.querySelector('#name-input').value;
-  console.log(username);
+  document.querySelector('#my-label').textContent = "Hello " + username;
+  // console.log(username);
 };
 
 // console.log(username);
