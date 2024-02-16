@@ -13,4 +13,11 @@ header1.textContent = "Hello " + Name;
 header2.textContent = "I am " + age + " Years Old."
 header3.textContent = "Enrolled: " + stats;
 
+let username;
+
+document.querySelector('#submit-btn').onclick = function (){
+  username = document.querySelector('#name-input').value;
+  console.log(username);
+};
+
 // console.log(username);
