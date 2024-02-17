@@ -18,7 +18,17 @@ let username;
 document.querySelector('#submit-btn').onclick = function (){
   username = document.querySelector('#name-input').value;
   document.querySelector('#my-label').textContent = "Hello " + username;
-  // console.log(username);
+  console.log(username);
 };
 
-// console.log(username);
+document.querySelector('.answer-btn').onclick = function(){
+  a = document.querySelector('.textbox-A').value;
+  a = Number(a);
+
+  b = document.querySelector('.textbox-B').value;
+  b = Number(b);
+
+  c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+  document.querySelector('.label-C').textContent = "Side C: " + c;
+};
